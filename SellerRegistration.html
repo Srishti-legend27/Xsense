@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('village.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'roboto', sans-serif;
+        }
+        p{
+            font-size: 30px;
+            border-bottom: 2px solid rgb(50, 50, 50);
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px 4px #ffffff;
+            padding: 20px;
+        }
+        form{
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #ffffff;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            opacity: 0.8;
+            box-shadow: 2px 2px 4px #000000;
+        }
+        input{
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-right: 30px;
+            opacity: 1;
+            
+        }
+        input[type="submit"]{
+            background-color: rgb(100, 255, 28);
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 1;
+            font-size: 16px;
+        }
+        button{
+            font-family: 'roboto', sans-serif;
+            margin: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(79, 70, 70);
+            padding: 15px 32px;
+            text-align: center;
+            opacity: 1;
+        }
+        button a{
+            text-decoration: none;
+            color: rgb(79, 70, 70);
+        }
+        button a:hover{
+            color: #939393;
+        }
+    </style>
+</head>
+<body>
+    <P>Registration Desk for Sellers!</P>
+    <form>
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">Create Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="phone">Contact Number:</label>
+        <input type="tel" name="phone" id="phone" required>
+        <br>
+        <label for="category">Business category:</label>
+        <select id="category" name="category">
+            <option value="dairy">Dairy Products</option>
+            <option value="oil">Oils and Perfumes</option>
+            <option value="juice">Juices</option>
+            <option value="pickle">Pickles and Papads</option>
+            <option value="bakery">Sweets & Bakery</option>
+          </select>
+        <br>
+        <label for="experience">Experience:</label>
+        <input type="integer" name="experience" id="experience" required>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <button class="home"><a href="index.php">Back to Home Page</a> </button>
+</body>
+</html>

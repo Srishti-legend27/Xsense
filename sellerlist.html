@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers List</title>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.seller-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.seller {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-info {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.product,
+.cost {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.product-photo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-photo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+    <div class="seller-list">
+        <div class="seller">
+            <div class="profile">
+                <img src="seller-1.jpg" alt="Seller-1" class="profile-photo">
+                <p class="name">Farhan Khan</p>
+            </div>
+            <div class="product-info">
+                <p class="product">Product: Desi ghee from Murrah</p>
+                <p class="cost">Cost: ₹500</p>
+            </div>
+            <div class="product-photo">
+                <img src="product1.jpg" alt="Product 1">
+            </div>
+        </div>
+
+        <div class="seller">
+            <div class="profile">
+                <img src="seller-2.jpg" alt="Seller-2" class="profile-photo">
+                <p class="name">Raju Aggrawal</p>
+            </div>
+            <div class="product-info">
+                <p class="product">Product: Organic Honey</p>
+                <p class="cost">Cost: ₹300</p>
+            </div>
+            <div class="product-photo">
+                <img src="product2.jpg" alt="Product 2">
+            </div>
+
+        </div>
+
+        <div class="seller">
+            <div class="profile">
+                <img src="seller-3.jpg" alt="Seller-3" class="profile-photo">
+                <p class="name">Seema Rani</p>
+            </div>
+            <div class="product-info">
+                <p class="product">Product: Desi Makhan</p>
+                <p class="cost">Cost: ₹400</p>
+            </div>
+            <div class="product-photo">
+                <img src="product3.jpg" alt="Product 3">
+            </div>
+        </div>
+
+        <div class="seller">
+            <div class="profile">
+                <img src="seller-4.jpg" alt="Seller-4" class="profile-photo">
+                <p class="name">Pappu Rawat</p>
+            </div>
+            <div class="product-info">
+                <p class="product">Product: Fresh coconut water</p>
+                <p class="cost">Cost: ₹60</p>
+            </div>
+            <div class="product-photo">
+                <img src="product5.JPG" alt="Product 4">
+            </div>
+        </div>
+
+        <div class="seller">
+            <div class="profile">
+                <img src="seller-5.jpg" alt="Seller-5" class="profile-photo">
+                <p class="name">Phulmati Devi</p>
+            </div>
+            <div class="product-info">
+                <p class="product">Product: Desi Attar</p>
+                <p class="cost">Cost: ₹500</p>
+            </div>
+            <div class="product-photo">
+                <img src="product4.jpg" alt="Product 5">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
